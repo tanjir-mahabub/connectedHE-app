@@ -17,7 +17,7 @@ const Home = () => {
                 className="absolute inset-0 bg-black opacity-50"
             ></div>
 
-            <div className="relative flex flex-row items-center justify-center space-x-6">
+            <div className="relative flex sm:flex-row flex-col items-center justify-center space-x-6 sm:gap-20">
                 <Logo />
                 <LoginForm />
             </div>

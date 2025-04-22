@@ -53,7 +53,7 @@ const LoginForm: React.FC = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="max-w-sm mx-auto mt-10 p-6 bg-white shadow-lg rounded-xl space-y-4">
+        <form onSubmit={handleSubmit} className="max-w-sm w-[500px] mx-auto mt-10 p-6 bg-white shadow-lg rounded-xl space-y-4">
             <h2 className="text-2xl font-semibold text-center">Login</h2>
 
             <div className="text-left">
