@@ -1,14 +1,21 @@
-import './App.css'
+// App.tsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginForm from './components/LoginForm';
+import Logo from './components/Logo';
+import Dashboard from './components/Dashboard';
 
 function App() {
-
   return (
-    <>
+    <Router>
       <div>
-        <h1 className="bg-red-700">Hello Vite!</h1>
+        <Logo />
+        <Routes>
+          <Route path="/" element={<LoginForm />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
       </div>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
